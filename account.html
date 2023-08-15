@@ -25,32 +25,32 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div class="bg-zinc-500 p-5 rounded-lg">
                 <h3 class="font-medium text-xl">Deposit</h3>
-                <h2 class="text-orange-500 font-semibold text-4xl">$<span >00</span></h2>
+                <h2 class="text-orange-500 font-semibold text-4xl">$<span id="total-deposit">00</span></h2>
             </div>
             <div class="bg-stone-700 p-5 rounded-lg">
                 <h3 class="font-medium text-xl">Withdraw</h3>
-                <h2 class="text-orange-500 font-semibold text-4xl">$<span >00</span></h2>
+                <h2 class="text-orange-500 font-semibold text-4xl">$<span id="total-withdraw" >00</span></h2>
             </div>
             <div class="bg-cyan-950 p-5 rounded-lg">
                 <h3 class="font-medium text-xl">Current Balance</h3>
-                <h2 class="text-orange-500 font-semibold text-4xl">$<span >00</span></h2>
+                <h2 class="text-orange-500 font-semibold text-4xl">$<span id="total-balance">1250</span></h2>
             </div>
             
         </div>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-12">
             <div class="bg-emerald-950 p-5 rounded-lg space-y-5">
                 <h3 class="font-medium text-xl">Deposit to your account</h3>
-                <input class="px-5 py-2 w-full" type="text" placeholder="$ amount you want to deposit">
-                <button class="btn rounded-lg bg-orange-500" id="login-btn">Deposit</button>
+                <input class="px-5 py-2 w-full" id="new-deposit" type="text" placeholder="$ amount you want to deposit">
+                <button class="btn rounded-lg bg-orange-500" id="deposit-btn">Deposit</button>
             </div> 
             <div class="bg-sky-900 p-5 rounded-lg space-y-5">
                 <h3 class="font-medium text-xl">Withdraw from your account</h3>
-                <input class="px-5 py-2 w-full" type="text" placeholder="$ amount you want to withdraw">
-                <button class="btn rounded-lg bg-orange-500" id="login-btn">Withdraw</button>
+                <input class="px-5 py-2 w-full" id="new-withdraw" type="text" placeholder="$ amount you want to withdraw">
+                <button class="btn rounded-lg bg-orange-500" id="withdraw-btn">Withdraw</button>
             </div> 
         </div>
     </main>
-    <script src="./js/account.js"></script>
+    <script src="./js/deposit.js"></script>
 </body>
 
 </html>
