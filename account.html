@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="business">
+<html lang="en" data-theme="dracula">
 
 <head>
     <meta charset="UTF-8">
@@ -18,10 +18,39 @@
 
 <body>
     <header class="text-center">
-        <h2 class="text-3xl font-medium mt-5 md:mt-20">Welcome To  <br class="block md:hidden"><span class="text-orange-500 font-bold">non-Premium Bank Account!</span></h2>
+        <h2 class="text-3xl font-medium mt-5 md:mt-20">Welcome To <br class="block md:hidden"><span
+            class="text-orange-500 font-bold">non-Premium Bank Account!</span></h2>
     </header>
-   
-    <script src="./js/login.js"></script>
+    <main class="mt-12 w-3/4 md:w-3/5 mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-zinc-500 p-5 rounded-lg">
+                <h3 class="font-medium text-xl">Deposit</h3>
+                <h2 class="text-orange-500 font-semibold text-4xl">$<span >00</span></h2>
+            </div>
+            <div class="bg-stone-700 p-5 rounded-lg">
+                <h3 class="font-medium text-xl">Withdraw</h3>
+                <h2 class="text-orange-500 font-semibold text-4xl">$<span >00</span></h2>
+            </div>
+            <div class="bg-cyan-950 p-5 rounded-lg">
+                <h3 class="font-medium text-xl">Current Balance</h3>
+                <h2 class="text-orange-500 font-semibold text-4xl">$<span >00</span></h2>
+            </div>
+            
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-12">
+            <div class="bg-emerald-950 p-5 rounded-lg space-y-5">
+                <h3 class="font-medium text-xl">Deposit to your account</h3>
+                <input class="px-5 py-2 w-full" type="text" placeholder="$ amount you want to deposit">
+                <button class="btn rounded-lg bg-orange-500" id="login-btn">Deposit</button>
+            </div> 
+            <div class="bg-sky-900 p-5 rounded-lg space-y-5">
+                <h3 class="font-medium text-xl">Withdraw from your account</h3>
+                <input class="px-5 py-2 w-full" type="text" placeholder="$ amount you want to withdraw">
+                <button class="btn rounded-lg bg-orange-500" id="login-btn">Withdraw</button>
+            </div> 
+        </div>
+    </main>
+    <script src="./js/account.js"></script>
 </body>
 
 </html>
